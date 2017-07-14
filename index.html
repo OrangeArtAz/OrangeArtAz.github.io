@@ -47,23 +47,28 @@ function scrollFunction() {
     } else {
         document.getElementById("myBtn").style.display = "none";
     }
-
-    if (document.body.scrollTop > 732 || document.documentElement.scrollTop > 20) {
+    // var we = document.body.scrollTop + "vh";
+    var section1 = document.getElementById("section1");
+    var section2 = document.getElementById("section2");
+    var section3 = document.getElementById("section3");
+    var section4 = document.getElementById("section4");
+    var section5 = document.getElementById("section5");
+    if (document.body.scrollTop > section1.offsetTop) {
         d.className =  "animation22";
     }
-    if (document.body.scrollTop > 1520 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > section2.offsetTop) {
           a.className =  "animation22";
       }
 
-    if (document.body.scrollTop > 2310 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > section3.offsetTop) {
         c.className =  "animation22";
       }
 
-    if (document.body.scrollTop > 3150 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > section4.offsetTop) {
           z.className =  "animation22";
       }
 
-    if (document.body.scrollTop > 3938 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > section5.offsetTop) {
             t.className =  "animation22";
         }
 
