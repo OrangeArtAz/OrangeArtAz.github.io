@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>orangeart</title>
+    <link rel="shortcut icon" href="images/or1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+        $(".lesicons").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+    });
+    </script>
+    <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+//
+// window.onscroll = function() {myFunction()};
+// function myFunction() {
+//     var elmnt = document.getElementsByClassName('body');
+//     var y = document.body.scrollTop;
+//     // var y = elmnt.scrollTop;
+//
+//     if ( y > 300) {
+//             d.className =  "animation22";
+//          } else {
+//           d.className =  "animation11";
+//         }
+// }
+
+
+
+function scrollFunction() {
+    var d = document.getElementById("Polig");
+    var a = document.getElementById("WEB");
+    var c = document.getElementById("Photo");
+    var z = document.getElementById("Video");
+    var t = document.getElementById("Audio");
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+
+    if (document.body.scrollTop > 732 || document.documentElement.scrollTop > 20) {
+        d.className =  "animation22";
+    }
+    if (document.body.scrollTop > 1520 || document.documentElement.scrollTop > 20) {
+          a.className =  "animation22";
+      }
+
+    if (document.body.scrollTop > 2310 || document.documentElement.scrollTop > 20) {
+        c.className =  "animation22";
+      }
+
+    if (document.body.scrollTop > 3150 || document.documentElement.scrollTop > 20) {
+          z.className =  "animation22";
+      }
+
+    if (document.body.scrollTop > 3938 || document.documentElement.scrollTop > 20) {
+            t.className =  "animation22";
+        }
+
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+<script type="text/javascript">
+  window.addEventListener("load", function() {
+    var load_screen = document.getElementById('load_screen');
+    document.body.removeChild(load_screen);
+  });
+</script>
+
+
+
+  </head>
+  <body>
+    <div class="" id="load_screen">
+      <div class="" id="loading">
+
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="container">
+      <header>
+
+        <div class="icons">
+          <div class="mainicon">
+              <img id="icon0"src="images/headimg.png" alt="">
+          </div>
+          <div class="lesicons">
+            <a href="#section1"> <img id="icon1" src="images/icon1.png" alt=""></a>
+            <a href="#section2">   <img id="icon2" src="images/icon2.png" alt=""></a>
+            <a href="#section3">     <img id="icon3" src="images/icon3.png" alt=""></a>
+            <a href="#section4">     <img id="icon4" src="images/icon4.png" alt=""></a>
+            <a href="#section5">       <img id="icon5" src="images/icon5.png" alt=""></a>
+          </div>
+        </div>
+      </header>
+      <div class="textLine">
+        <h2>Studio</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <section id="section1">
+        <h1 id="Polig">Полиграфия</h1>
+      </section>
+      <section id="section2">
+        <h1 id="WEB">Веб разработки</h1>
+      </section>
+      <section id="section3">
+        <h1 id="Photo">Фото</h1>
+      </section>
+      <section id="section4">
+        <h1 id="Video">Видео</h1>
+      </section>
+      <section id="section5">
+        <h1 id="Audio" >Звукозапись</h1>
+      </section>
+      <footer>
+        <div class="BotMenu">
+          <h1>By <a href="#">@Zeynal</a></h1>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>

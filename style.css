@@ -1,0 +1,395 @@
+@font-face {
+    font-family: orangeFont;
+    src: url(fonts/OrangeArtFont.otf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: orangeFont;
+}
+
+#load_screen {
+  background-color: red;
+  opacity: 1;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/img6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 4;
+}
+
+.icons {
+  position: absolute;
+  width: 25vw;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-around;
+}
+.mainicon #icon0 {
+  width: 25vw;
+}
+.lesicons {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lesicons #icon1 {
+  position: relative;
+  width: 7vw;
+  background-color: #487080;
+  border-radius: 7vw;
+  border: 0.2vw white solid;
+  animation: icon1;
+  animation-duration: 1.5s;
+  z-index: 2;
+}
+/*@media screen and (min-width: 600px) {
+    .lesicons {
+     width: 400px;
+     height: 300px;
+    }
+}
+@media screen and (min-width: 600px) {
+    #icon1 {
+     width: 400px;
+     height: 300px;
+    }
+}*/
+.lesicons #icon2 {
+  width: 7vw;
+  background-color: #487080;
+  border-radius: 7vw;
+  border:0.2vw white solid;
+  animation: icon2;
+  animation-duration: 1.5s;
+    position: relative;
+}
+.lesicons  #icon3 {
+  width: 7vw;
+  background-color: #487080;
+  border-radius: 7vw;
+  border:0.2vw white solid;
+  animation: icon3;
+  animation-duration: 1.5s;
+
+    position: relative;
+}
+.lesicons  #icon4 {
+  width: 7vw;
+  background-color: #487080;
+  border-radius: 7vw;
+  border: 0.2vw white solid;
+  animation: icon4;
+  animation-duration: 1.5s;
+
+    position: relative;
+}
+.lesicons  #icon5 {
+  width: 7vw;
+  background-color: #487080;
+  border-radius: 7vw;
+  border: 0.2vw white solid;
+  animation: icon5;
+  animation-duration: 1.5s;
+
+    position: relative;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+/* Hover Effects */
+
+.lesicons #icon1:hover{
+
+}
+.lesicons a {
+  transition: 1s;
+}
+.lesicons a *:hover {
+  transform: scale(1.3);
+  box-shadow: 0 0 10px rgba(1,01,1,1.5);
+  transition: 0.5s;
+  z-index: 2;
+}
+
+
+
+
+.textLine {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 4;
+    background-color: white;
+}
+.textLine p {
+
+    z-index: 4;
+}
+section {
+  position: relative;
+    z-index: 4;
+}
+#section1 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/img4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#Polig, #WEB, #Photo, #Video, #Audio{
+  opacity: 0;
+}
+.animation22 {
+  animation: Polig;
+  animation-duration: 1.5s;
+  background-color: green !important;
+  left: 50vw;
+  position: relative;
+  opacity: 1 !important;
+}
+
+.animation11 {
+  position: relative;
+  animation: Polig1;
+  animation-duration: 1.5s;
+  background-color: inherit;
+  left: 50vw;
+}
+
+
+#section1::after {
+  content: '';
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.01));
+  position: absolute;
+  height: 12vh;
+  bottom: 0;
+  width: 100vw;
+  z-index: 10000;
+}
+#section1 h1 {
+  position: absolute;
+  width: 25vw;
+  background: #487080;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+#section2 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/img2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#section2 h1 {
+  position: absolute;
+  width: 25vw;
+  background: #487080;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+#section2::before {
+  content: '';
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.01));
+  position: absolute;
+  height: 12vh;
+  top: 0;
+  width: 100vw;
+  z-index: 10000;
+}
+#section2::after {
+  content: '';
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.01));
+  position: absolute;
+  height: 12vh;
+  bottom: 0;
+  width: 100vw;
+  z-index: 10000;
+}
+#section3 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/himg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#section3 h1 {
+  position: absolute;
+  width: 25vw;
+  background: #487080;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+#section3::before {
+  content: '';
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.01));
+  position: absolute;
+  height: 12vh;
+  top: 0;
+  width: 100vw;
+  z-index: 10000;
+}
+#section3::after {
+  content: '';
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.01));
+  position: absolute;
+  height: 12vh;
+  bottom: 0;
+  width: 100vw;
+  z-index: 10000;
+}
+#section4 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/img3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#section4 h1 {
+  position: absolute;
+  width: 25vw;
+  background: #487080;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+#section4::before {
+  content: '';
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.01));
+  position: absolute;
+  height: 12vh;
+  top: 0;
+  width: 100vw;
+  z-index: 10000;
+}
+#section4::after {
+  content: '';
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.01));
+  position: absolute;
+  height: 12vh;
+  bottom: 0;
+  width: 100vw;
+  z-index: 10000;
+}
+#section5 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/img1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 4;
+}
+#section5 h1 {
+  position: absolute;
+  width: 25vw;
+  background: #487080;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+#section5::before {
+  content: '';
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.01));
+  position: absolute;
+  height: 12vh;
+  top: 0;
+  width: 100vw;
+  z-index: 10000;
+}
+footer {
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BotMenu{
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
