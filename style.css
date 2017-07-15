@@ -8,19 +8,39 @@ body {
   margin: 0;
   font-family: orangeFont;
 }
-
+body { overflow:  hidden; }
+.body1 {
+  overflow: scroll;
+}
 #load_screen {
-  background-color: red;
+  background-color: black;
   opacity: 1;
   position: fixed;
   z-index: 999;
   top: 0;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
+#loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+#loading p {
+  color: white;
+  font-size: 26px;
+  position: fixed;
+  z-index: 1000;
+}
+#loading p::after {
+  content: "...";
+  animation: load 1s infinite;;
+}
 
 header {
   width: 100vw;

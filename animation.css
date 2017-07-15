@@ -33,3 +33,7 @@
   0% { background-color: green }
   100% { background-color:green ;}
 }
+@keyframes load{
+  0% { color: black; }
+  100% { color: white;}
+}
