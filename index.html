@@ -20,22 +20,6 @@
     <script>
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
-//
-// window.onscroll = function() {myFunction()};
-// function myFunction() {
-//     var elmnt = document.getElementsByClassName('body');
-//     var y = document.body.scrollTop;
-//     // var y = elmnt.scrollTop;
-//
-//     if ( y > 300) {
-//             d.className =  "animation22";
-//          } else {
-//           d.className =  "animation11";
-//         }
-// }
-
-
-
 function scrollFunction() {
     var d = document.getElementById("Polig");
     var a = document.getElementById("WEB");
@@ -73,24 +57,27 @@ function scrollFunction() {
         }
 
 }
-
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 </script>
-
-
-
 <script type="text/javascript">
   window.addEventListener("load", function() {
     var load_screen = document.getElementById('load_screen');
     document.body.removeChild(load_screen);
+    var ic1 = document.getElementById("icon1");
+    var ic2 = document.getElementById("icon2");
+    var ic3 = document.getElementById("icon3");
+    var ic4 = document.getElementById("icon4");
+    var ic5 = document.getElementById("Audio");
+    document.getElementById("icon1").className = "icon1";
+    document.getElementById("icon2").className = "icon2";
+    document.getElementById("icon3").className = "icon3";
+    document.getElementById("icon4").className = "icon4";
+    document.getElementById("icon5").className = "icon5";
   });
 </script>
-
-
 
   </head>
   <body>
@@ -108,11 +95,11 @@ function topFunction() {
               <img id="icon0"src="images/headimg.png" alt="">
           </div>
           <div class="lesicons">
-            <a href="#section1"> <img id="icon1" src="images/icon1.png" alt=""></a>
-            <a href="#section2">   <img id="icon2" src="images/icon2.png" alt=""></a>
-            <a href="#section3">     <img id="icon3" src="images/icon3.png" alt=""></a>
-            <a href="#section4">     <img id="icon4" src="images/icon4.png" alt=""></a>
-            <a href="#section5">       <img id="icon5" src="images/icon5.png" alt=""></a>
+            <a href="#section1"> <img id="icon1"  src="images/icon1.png" alt=""></a>
+            <a href="#section2"><img id="icon2" src="images/icon2.png" alt=""></a>
+            <a href="#section3"><img id="icon3" src="images/icon3.png" alt=""></a>
+            <a href="#section4"><img id="icon4" src="images/icon4.png" alt=""></a>
+            <a href="#section5"><img id="icon5" src="images/icon5.png" alt=""></a>
           </div>
         </div>
       </header>

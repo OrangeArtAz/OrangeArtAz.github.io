@@ -63,10 +63,15 @@ header {
   background-color: #487080;
   border-radius: 7vw;
   border: 0.2vw white solid;
-  animation: icon1;
+
   animation-duration: 1.5s;
   z-index: 2;
 }
+.lesicons .icon1 {
+  animation: icon1;
+}
+
+
 /*@media screen and (min-width: 600px) {
     .lesicons {
      width: 400px;
@@ -84,39 +89,47 @@ header {
   background-color: #487080;
   border-radius: 7vw;
   border:0.2vw white solid;
-  animation: icon2;
+
   animation-duration: 1.5s;
     position: relative;
+}
+.lesicons .icon2 {
+  animation: icon2;
 }
 .lesicons  #icon3 {
   width: 7vw;
   background-color: #487080;
   border-radius: 7vw;
   border:0.2vw white solid;
-  animation: icon3;
-  animation-duration: 1.5s;
 
-    position: relative;
+  animation-duration: 1.5s;
+  position: relative;
+}
+.lesicons  .icon3 {
+  animation: icon3;
 }
 .lesicons  #icon4 {
   width: 7vw;
   background-color: #487080;
   border-radius: 7vw;
   border: 0.2vw white solid;
-  animation: icon4;
   animation-duration: 1.5s;
-
-    position: relative;
+  position: relative;
+}
+.lesicons  .icon4 {
+  animation: icon4;
 }
 .lesicons  #icon5 {
   width: 7vw;
   background-color: #487080;
   border-radius: 7vw;
   border: 0.2vw white solid;
-  animation: icon5;
-  animation-duration: 1.5s;
 
-    position: relative;
+  animation-duration: 1.5s;
+  position: relative;
+}
+.lesicons  .icon5 {
+  animation: icon5;
 }
 #myBtn {
   display: none;
