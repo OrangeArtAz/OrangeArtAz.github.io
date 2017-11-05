@@ -1,0 +1,56 @@
+@media (max-width:900px) {
+  .About {
+      position: relative;
+      bottom: 0;
+      top: 0;
+  }
+  .contacts {
+    position: relative;
+      bottom: 0;
+      top: 0;
+      background-color: #f1f1f1;
+  }
+  .contacts .faces {
+    width: 90%;
+    display: flex;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-left: white 2px solid;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mainicon {
+    width: 90%;
+  }
+  .lesicons a {
+    width: 100%;
+  }
+  .lesicons a #icon1 {
+    border: 2px white solid;
+    width: 70px;
+  }
+  .lesicons a #icon2 {
+    border: 2px white solid;
+    width: 70px;
+  }
+  .lesicons a #icon3 {
+    border: 2px white solid;
+    width: 70px;
+  }
+  .lesicons a #icon4 {
+    border: 2px white solid;
+    width: 70px;
+  }
+  .lesicons a #icon5 {
+    border: 2px white solid;
+    width:70px;
+  }
+  @keyframes Polig{
+
+    0% {left: -20px; background-color: white; opacity: 0.1}
+    100% {left: 21.5vw;;background-color: rgba(0, 0, 0, 0.5);opacity: 1}
+  }
+  h1 {
+    font-size: 15px;
+  }
+}

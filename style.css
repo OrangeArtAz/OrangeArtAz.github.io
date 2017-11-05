@@ -7,10 +7,12 @@ body {
   padding: 0;
   margin: 0;
   font-family: orangeFont;
+  background-color: #f1f1f1;
 }
-body { overflow:  hidden; }
+body { overflow-y:  hidden; }
 .body1 {
   overflow: scroll;
+  overflow-x: hidden;
 }
 #load_screen {
   background-color: black;
@@ -18,7 +20,7 @@ body { overflow:  hidden; }
   position: fixed;
   z-index: 999;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -30,12 +32,16 @@ body { overflow:  hidden; }
   justify-content: center;
   align-items: center;
   position: fixed;
+  flex-direction: column;
+}
+#loading img {
+  width: 50%;
 }
 #loading p {
   color: white;
   font-size: 26px;
-  position: fixed;
   z-index: 1000;
+  text-align: center;
 }
 #loading p::after {
   content: "...";
@@ -59,57 +65,49 @@ header {
 
 .icons {
   position: absolute;
-  width: 25vw;
+  width: 25%;
 }
 .icons {
   display: flex;
   flex-direction: column;
-
+  width: 40%;
   align-items: center;
   justify-content: space-around;
 }
+.mainicon {
+  width: 80%;
+  margin-top: -40px;
+}
 .mainicon #icon0 {
-  width: 25vw;
+  width: 100%;
+
 }
 .lesicons {
-  width: 40vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.lesicons #icon1 {
+.lesicons a {
+  width: 20%;
+}
+.lesicons a #icon1 {
   position: relative;
-  width: 7vw;
+  width: 100%;
   background-color: #487080;
-  border-radius: 7vw;
-  border: 0.2vw white solid;
+  border-radius: 100%;
+  border: 4px white solid;
 
   animation-duration: 1.5s;
-  z-index: 2;
 }
 .lesicons .icon1 {
   animation: icon1;
 }
-
-
-/*@media screen and (min-width: 600px) {
-    .lesicons {
-     width: 400px;
-     height: 300px;
-    }
-}
-@media screen and (min-width: 600px) {
-    #icon1 {
-     width: 400px;
-     height: 300px;
-    }
-}*/
 .lesicons #icon2 {
-  width: 7vw;
+  width: 100%;
   background-color: #487080;
-  border-radius: 7vw;
-  border:0.2vw white solid;
-
+  border-radius: 100%;
+  border: 4px white solid;
   animation-duration: 1.5s;
     position: relative;
 }
@@ -117,11 +115,10 @@ header {
   animation: icon2;
 }
 .lesicons  #icon3 {
-  width: 7vw;
+  width: 100%;
   background-color: #487080;
-  border-radius: 7vw;
-  border:0.2vw white solid;
-
+  border-radius: 100%;
+  border: 4px white solid;
   animation-duration: 1.5s;
   position: relative;
 }
@@ -129,10 +126,10 @@ header {
   animation: icon3;
 }
 .lesicons  #icon4 {
-  width: 7vw;
+  width: 100%;
   background-color: #487080;
-  border-radius: 7vw;
-  border: 0.2vw white solid;
+  border-radius: 100%;
+  border: 4px white solid;
   animation-duration: 1.5s;
   position: relative;
 }
@@ -140,10 +137,10 @@ header {
   animation: icon4;
 }
 .lesicons  #icon5 {
-  width: 7vw;
+  width: 100%;
   background-color: #487080;
-  border-radius: 7vw;
-  border: 0.2vw white solid;
+  border-radius: 100%;
+  border: 4px white solid;
 
   animation-duration: 1.5s;
   position: relative;
@@ -165,7 +162,6 @@ header {
   padding: 15px;
   border-radius: 10px;
 }
-
 #myBtn:hover {
   background-color: #555;
 }
@@ -181,29 +177,11 @@ header {
   transform: scale(1.3);
   box-shadow: 0 0 10px rgba(1,01,1,1.5);
   transition: 0.5s;
-  z-index: 2;
-}
-
-
-
-
-.textLine {
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  text-align: center;
-  padding-bottom: 20px;
-  position: relative;
   z-index: 4;
-    background-color: white;
 }
-.textLine p {
 
-    z-index: 4;
-}
+
+
 section {
   position: relative;
     z-index: 4;
@@ -227,8 +205,7 @@ section {
 .animation22 {
   animation: Polig;
   animation-duration: 1.5s;
-  background-color: green !important;
-  left: 50vw;
+  background-color: rgba(0, 0, 0, 0.5);;
   position: relative;
   opacity: 1 !important;
 }
@@ -238,7 +215,6 @@ section {
   animation: Polig1;
   animation-duration: 1.5s;
   background-color: inherit;
-  left: 50vw;
 }
 
 
@@ -253,11 +229,12 @@ section {
 }
 #section1 h1 {
   position: absolute;
-  width: 25vw;
-  background: #487080;
-  color: #ffffff;
+  width: 25%;
+  background:rgba(0, 0, 0, 0.5);
+    color: #e8aa00;
+  opacity: 0;
   text-align: center;
-  padding: 20px;
+  padding: 60px;
 }
 #section2 {
   width: 100vw;
@@ -274,11 +251,12 @@ section {
 }
 #section2 h1 {
   position: absolute;
-  width: 25vw;
-  background: #487080;
-  color: #ffffff;
+  width: 25%;
+  background:rgba(0, 0, 0, 0.5);
+  color: #e8aa00;
+  opacity: 0;
   text-align: center;
-  padding: 20px;
+  padding: 60px;
 }
 #section2::before {
   content: '';
@@ -313,11 +291,12 @@ section {
 }
 #section3 h1 {
   position: absolute;
-  width: 25vw;
-  background: #487080;
-  color: #ffffff;
+  width: 25%;
+  background:rgba(0, 0, 0, 0.5);
+  color: #e8aa00;
+  opacity: 0;
   text-align: center;
-  padding: 20px;
+  padding: 60px;
 }
 #section3::before {
   content: '';
@@ -352,11 +331,12 @@ section {
 }
 #section4 h1 {
   position: absolute;
-  width: 25vw;
-  background: #487080;
-  color: #ffffff;
+  width: 25%;
+  background:rgba(0, 0, 0, 0.5);
+  color: #e8aa00;
+  opacity: 0;
   text-align: center;
-  padding: 20px;
+  padding: 60px;
 }
 #section4::before {
   content: '';
@@ -392,11 +372,12 @@ section {
 }
 #section5 h1 {
   position: absolute;
-  width: 25vw;
-  background: #487080;
-  color: #ffffff;
+  width: 25%;
+  background:rgba(0, 0, 0, 0.5);
+  color: #e8aa00;
+  opacity: 0;
   text-align: center;
-  padding: 20px;
+  padding: 60px;
 }
 
 #section5::before {
@@ -409,20 +390,70 @@ section {
   z-index: 10000;
 }
 footer {
-    width: 100vw;
-    height: 10vh;
-    position: relative;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 90vh;
+    flex-direction: column;
+    background-color: #f1f1f1;
 }
-.BotMenu{
-  position: fixed;
-  bottom: 0;
-  height: 10vh;
-  width: 20vw;
+
+
+.About {
+  width: 80%;
   display: flex;
+  flex-direction: column;
+  position: relative;
+  position: fixed;
+  bottom: 70%;
+  text-align: center;
+}
+.About hr {
+  color: black;
+  background-color: black;
+  width: 100%;
+}
+.About h2 {
+  margin: 0;
+}
+.contacts {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  position: fixed;
+  bottom: 50px;
+  height: 60%;
   z-index: 2;
+}
+.contacts .faces {
+  width: 33%;
+  text-align: center;
+}
+.contacts .faces + .faces {
+  border-left: white 2px solid;
+}
+.contacts .faces p {
+  margin: 0;
+}
+.contacts .faces h2 {
+  margin: 0;
+}
+.contacts .faces h2+p {
+  padding: 10px 0;
+}
+.contacts .faces p+p {
+  padding-bottom: 10px;
+}
+.contacts .faces img {
+  width: 70%;
+  height: 216px;
+  object-fit: contain;
+}
+.coded {
+  position: fixed;
+  border: 0;
 }

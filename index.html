@@ -6,6 +6,8 @@
     <link rel="shortcut icon" href="images/or1.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="adapt.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript">
      $(document).ready(function(){
@@ -37,22 +39,22 @@ function scrollFunction() {
     var section3 = document.getElementById("section3");
     var section4 = document.getElementById("section4");
     var section5 = document.getElementById("section5");
-    if (document.body.scrollTop > section1.offsetTop) {
+    if (document.body.scrollTop > section1.offsetTop-400) {
         d.className =  "animation22";
     }
-    if (document.body.scrollTop > section2.offsetTop) {
+    if (document.body.scrollTop > section2.offsetTop-400) {
           a.className =  "animation22";
       }
 
-    if (document.body.scrollTop > section3.offsetTop) {
+    if (document.body.scrollTop > section3.offsetTop-400) {
         c.className =  "animation22";
       }
 
-    if (document.body.scrollTop > section4.offsetTop) {
+    if (document.body.scrollTop > section4.offsetTop-400) {
           z.className =  "animation22";
       }
 
-    if (document.body.scrollTop > section5.offsetTop) {
+    if (document.body.scrollTop > section5.offsetTop-400) {
             t.className =  "animation22";
         }
 
@@ -85,19 +87,19 @@ function topFunction() {
   <body id="body">
     <div class="" id="load_screen">
       <div class="" id="loading">
-        <p>Yüklənir</p>
+        <img src="images/3.png" alt="">
+        <p></p>
       </div>
     </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="container">
       <header>
-
         <div class="icons">
           <div class="mainicon">
               <img id="icon0"src="images/headimg.png" alt="">
           </div>
           <div class="lesicons">
-            <a href="#section1"> <img id="icon1"  src="images/icon1.png" alt=""></a>
+            <a href="#section1"> <img id="icon1" src="images/icon1.png" alt=""></a>
             <a href="#section2"><img id="icon2" src="images/icon2.png" alt=""></a>
             <a href="#section3"><img id="icon3" src="images/icon3.png" alt=""></a>
             <a href="#section4"><img id="icon4" src="images/icon4.png" alt=""></a>
@@ -105,32 +107,8 @@ function topFunction() {
           </div>
         </div>
       </header>
-      <div class="textLine">
-        <h2>Studio</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
       <section id="section1">
+
         <h1 id="Polig">Полиграфия</h1>
       </section>
       <section id="section2">
@@ -146,11 +124,44 @@ function topFunction() {
         <h1 id="Audio" >Звукозапись</h1>
       </section>
       <footer>
-        <div class="BotMenu">
-          <h1>By <a href="#">@Zeynal</a></h1>
+        <div class="About">
+          <h2>Studio</h2>
+          <hr>
+          <p>
+            OrangeArt Studiyası peşəkar komandadan və
+            fotoqrafiya,poliqrafiya,animasiya,video
+            çəkiliş və montaj sahəsində təcrübəli
+            mütəxəssislərdən təşkil olunmuş kampaniyadır.
+          </p>
+        </div>
+        <div class="contacts">
+          <div class="faces">
+            <img src="images/Toqrul.jpg" alt="">
+          <div class="info">
+            <h2>Toqrul</h2>
+              <p>Art-Director</p>
+          </div>
+          </div>
+          <div class="faces">
+            <img src="images/Farhad.jpg" alt="">
+            <div class="info">
+              <h2>Ferhad</h2>
+              <p>Photographer</p>
+            </div>
+          </div>
+          <div class="faces">
+            <img src="images/Zeynal.jpg" alt="">
+            <div class="info">
+              <h2>Zeynal</h2>
+              <p>Web-developer</p>
+            </div>
+          </div>
         </div>
       </footer>
 
     </div>
+    <!-- <div class="coded">
+      By <a href="#">Zeynal</a>
+    </div> -->
   </body>
 </html>
